@@ -30,8 +30,12 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'tools/Classes/**/*'
-  
+  # s.source_files = 'tools/Classes/**/*'
+
+  s.subspec 'extension' do |extension|
+      extension.source_files = 'tools/Classes/extension/**/*'
+  end
+
   # s.resource_bundles = {
   #   'tools' => ['tools/Assets/*.png']
   # }
