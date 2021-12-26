@@ -36,6 +36,10 @@ TODO: Add long description of the pod here.
       extension.source_files = 'tools/Classes/extension/**/*'
   end
 
+  s.subspec 'common' do | common |
+      common.source_files = 'tools/Classes/common/**/*'
+  end
+
   # s.resource_bundles = {
   #   'tools' => ['tools/Assets/*.png']
   # }
